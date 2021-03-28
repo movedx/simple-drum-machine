@@ -20,7 +20,7 @@ const DrumPad = (props) => {
   const play = async () => {
     let text = soundBank[props.id.toLowerCase()];
     props.setDisplayText(text.substr(text.lastIndexOf("/") + 1));
-    // sample.current.currentTime = 0;
+    sample.current.currentTime = 0;
     await sample.current.play();
   };
 
